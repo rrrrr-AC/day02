@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表布局</title>
+    <style>
+    body,ul {
+     margin: 0;
+     padding: 0;
+    }
+    ul {
+     list-style: none;   
+    }
+    .products {
+     width: 1024px;
+     background-color: #cab8b8;   
+    }
+    .products::after{
+     content: "" ;
+     display:block;
+     clear:both;  
+    }
+    /* (1024px-4*10px)/5=196px*/
+    .products > li{
+     float: left;
+     height: 100px;
+     width: 196px;
+     margin-right: 10px;
+     margin-bottom: 10px;
+     background-color: rgb(52, 50, 139);   
+    }
+    .products > li:nth-child(5n){
+     margin-right: 0;   
+    }</style>
+</head>
+<body>
+    <ul class="products">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+    </ul>
+</body>
+</html>
